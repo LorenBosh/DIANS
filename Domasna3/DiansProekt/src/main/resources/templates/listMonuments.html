@@ -70,6 +70,14 @@
         .search-btn {
             margin-top: 20px;
         }
+        .map-btn
+        {
+            margin-top: 30px;
+        }
+        .map-btn a
+        {
+            width: 150px;
+        }
 
     </style>
 </head>
@@ -85,7 +93,7 @@
             </thead>
             <tbody>
             <tr th:each="monument : ${monuments}">
-                <td><a th:href="@{'/monuments/details/{id}' (id=${monument.getId()})}">Details</a></td>
+                <td><a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></td>
                 <td th:text="${monument.getName()}"></td>
             </tr>
             </tbody>
@@ -96,6 +104,10 @@
         <h2>Search monument:</h2>
         <a href="/search" class="btn">Search</a>
     </div>
+    <div class="map-btn">
+        <a href="/map" class="btn">View map</a>
+    </div>
+
 
 
 </main>

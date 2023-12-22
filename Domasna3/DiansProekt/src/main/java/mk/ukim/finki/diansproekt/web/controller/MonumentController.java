@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
-@RequestMapping("/monuments")
+@RequestMapping("/")
 public class MonumentController {
 
     private final MonumentService monumentService;

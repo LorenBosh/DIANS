@@ -41,9 +41,34 @@
       border: 1px solid #333;
       padding: 8px;
     }
+    #home-btn {
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      font-family: "Times New Roman", sans-serif;
+      font-size: medium;
+    }
+    .btn {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
+<div id="home-btn">
+  <a href="/" class="btn">Back to main page</a>
+</div>
 
 <header>
   <h1 th:text="${monument.getName()}">Name of monument</h1>

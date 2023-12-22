@@ -38,7 +38,6 @@ public class SearchController {
     @PostMapping("/search1")
     public String Search1(@RequestParam String name,
                           @RequestParam(name = "type", required = false) String type,
-                          @RequestParam(name="searchCity", required = false) String searchType1,
                           @RequestParam(name="searchName", required = false) String searchType2,
                           Model model){
         List <Monument> monuments = new ArrayList<>();

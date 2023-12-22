@@ -17,11 +17,11 @@ public class MonumentRepository {
     }
 
     public List<Monument> searchByName(String name, String type){
-        return DataHolder.monumentList.stream().filter(i->i.getName().toLowerCase().contains(name.toLowerCase()) && i.getType().toLowerCase().contains(type.toLowerCase())).collect(Collectors.toList());
+        return DataHolder.monumentList.stream().filter(i->i.getName().toLowerCase().contains(name.toLowerCase()) || i.getType().toLowerCase().contains(type.toLowerCase())).collect(Collectors.toList());
     }
 
     public List<Monument> searchByCity(String city, String type){
-        return DataHolder.monumentList.stream().filter(i->i.getCity().toLowerCase().contains(city.toLowerCase()) && i.getType().toLowerCase().contains(type.toLowerCase())).collect(Collectors.toList());
+        return DataHolder.monumentList.stream().filter(i->i.getCity().toLowerCase().contains(city.toLowerCase()) || i.getType().toLowerCase().contains(type.toLowerCase())).collect(Collectors.toList());
     }
 
     public List<Monument> Details(Long id){

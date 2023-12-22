@@ -85,7 +85,7 @@
             </thead>
             <tbody>
             <tr th:each="monument : ${monuments}">
-                <td><a th:href="@{'/monuments/details/{id}' (id=${monument.getId()})}">Details</a></td>
+                <td><a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></td>
                 <td th:text="${monument.getName()}"></td>
             </tr>
             </tbody>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Heritage Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <style>
+        #map {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<h1>Cultural Heritage Map</h1>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var map = L.map('map').setView([41.6086, 21.7453], 8);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        var culturalHeritages = [
+            { name: "Кокино", latitude: 42.2633818, longitude: 21.953118},
+            { name: "Јаја-пашина џамија", latitude: 42.00754015, longitude: 21.44214199},
+            { name:"Манастир Св. Андреј",latitude: 41.9505936, longitude: 21.2991931 },
+            { name: "Спомен Костурница",longitude: 21.78945368, latitude: 41.72329265 },
+            { name: "Спомен куќа Тоше Проески", longitude: 21.24628933, latitude:41.3744405},
+            { name:"Цареви Кули" ,longitude: 22.6298581 ,latitude:41.43246945}
+
+
+        ];
+
+        culturalHeritages.forEach(function (heritage) {
+            L.marker([heritage.latitude, heritage.longitude])
+                .addTo(map)
+                .bindPopup(heritage.name);
+        });
+    });
+</script>
+</body>
+</html>

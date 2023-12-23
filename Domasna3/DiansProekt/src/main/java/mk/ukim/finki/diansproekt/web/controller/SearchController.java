@@ -36,19 +36,31 @@ public class SearchController {
 
 
     @PostMapping("/search1")
-    public String Search1(@RequestParam String name, @RequestParam(required = false) String type,
-                          @RequestParam(name="searchCity", required = false)
-                          String searchType1, @RequestParam(name="searchName", required = false)
-                          String searchType2, Model model){
+    public String Search1(@RequestParam String name,
+                          @RequestParam(name = "type", required = false) String type,
+                          @RequestParam(name="searchName", required = false) String searchType2,
+                          Model model){
         List <Monument> monuments = new ArrayList<>();
-        if(searchType2 != null)
-        {
-            monuments = this.monumentService.searchByName(name.replace(",", ""),type);
+
+
+        if (type != null) {
+            if(searchType2 != null) {
+                monuments = this.monumentService.searchByName(name.replace(",", ""),type);
+            }
+            else {
+                monuments = this.monumentService.searchByCity(name.replace(",", ""),type);
+            }
         }
-        else
-        {
-            monuments = this.monumentService.searchByCity(name.replace(",", ""),type);
+        else {
+            if(searchType2 != null) {
+                monuments = this.monumentService.searchNameWithoutType(name.replace(",", ""));
+            }
+            else {
+                monuments = this.monumentService.searchCityWithoutType(name.replace(",", ""));
+            }
+
         }
+
 
         model.addAttribute("monuments", monuments);
         return "searchResults";

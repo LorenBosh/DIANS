@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72beddfe-42b2-4730-b871-e957a82bf962" name="Changes" comment="Kreiranje infrastuktura za rabota so bazi na podatoci">
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/model/Monument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/model/Monument.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ZGiNJZDWBmJSQpn6fU5BdWGuex" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "EntityCreation",
+    "last_opened_file_path": "C:/Users/niki/Documents/5 semestar/Dians/diansProekt/Domasna3/DiansProekt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="DiansProektApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="DiansProekt" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.diansproekt.DiansProektApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72beddfe-42b2-4730-b871-e957a82bf962" name="Changes" comment="" />
+      <created>1702054775518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702054775518</updated>
+      <workItem from="1702054776526" duration="1578000" />
+      <workItem from="1702057027673" duration="1086000" />
+      <workItem from="1702145259357" duration="28000" />
+      <workItem from="1703246143210" duration="7349000" />
+    </task>
+    <task id="LOCAL-00001" summary="test za rabota so branches">
+      <option name="closed" value="true" />
+      <created>1703247902586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703247902586</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Kreiranje infrastuktura za rabota so bazi na podatoci">
+      <option name="closed" value="true" />
+      <created>1703250371303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703250371303</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test za rabota so branches" />
+    <MESSAGE value="Kreiranje infrastuktura za rabota so bazi na podatoci" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kreiranje infrastuktura za rabota so bazi na podatoci" />
+  </component>
+</project>

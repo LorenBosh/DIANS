@@ -1,0 +1,19 @@
+Index: Domasna3/DiansProekt/src/main/java/mk/ukim/finki/diansproekt/model/Monument.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package mk.ukim.finki.diansproekt.model;\r\n\r\nimport jakarta.persistence.*;\r\nimport lombok.*;\r\n\r\nimport java.util.List;\r\n\r\n@Entity\r\n@Table(name = \"movies\")\r\n@AllArgsConstructor\r\n@NoArgsConstructor\r\n@Getter\r\n@Setter\r\n@Data\r\npublic class Monument {\r\n    @Id\r\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\r\n    private Long id;\r\n    private String name;\r\n    private String Country;\r\n    private String City;\r\n    private int Longitude;\r\n    private int Latitude;\r\n    private String Address;\r\n    private String Type;\r\n    private String OpeningHours;\r\n    private String Email;\r\n    private Long Phone;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Domasna3/DiansProekt/src/main/java/mk/ukim/finki/diansproekt/model/Monument.java b/Domasna3/DiansProekt/src/main/java/mk/ukim/finki/diansproekt/model/Monument.java
+--- a/Domasna3/DiansProekt/src/main/java/mk/ukim/finki/diansproekt/model/Monument.java	
++++ b/Domasna3/DiansProekt/src/main/java/mk/ukim/finki/diansproekt/model/Monument.java	
+@@ -6,7 +6,7 @@
+ import java.util.List;
+ 
+ @Entity
+-@Table(name = "movies")
++@Table(name = "Monuments")
+ @AllArgsConstructor
+ @NoArgsConstructor
+ @Getter

@@ -13,4 +13,8 @@ public interface MonumentService {
 
     List<Monument> searchByName(String name,String type);
     List<Monument> searchByCity(String city,String type);
+
+    List<Monument> searchCityWithoutType(String city);
+
+    List<Monument> searchNameWithoutType(String name);
 }

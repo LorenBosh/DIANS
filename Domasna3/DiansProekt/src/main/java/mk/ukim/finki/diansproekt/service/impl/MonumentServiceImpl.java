@@ -35,4 +35,15 @@ public class MonumentServiceImpl implements MonumentService {
     public List<Monument> searchByCity(String city,String type){
         return monumentRepository.searchByCity(city,type);
     }
+
+    @Override
+    public List<Monument> searchCityWithoutType(String city){
+        return monumentRepository.searchCityWithoutType(city);
+    }
+
+    @Override
+    public List<Monument> searchNameWithoutType(String name){
+        return monumentRepository.searchNameWithoutType(name);
+    }
+
 }

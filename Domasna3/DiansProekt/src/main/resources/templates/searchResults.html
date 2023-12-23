@@ -57,7 +57,7 @@
       <span th:text="${monument.name}"></span>
       <span th:text="${monument.city}"></span>
       <span th:text="${monument.type}"></span>
-      <span><a th:href="@{'/monuments/details/{id}' (id=${monument.getId()})}">Details</a></span>
+      <span><a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></span>
     </li>
   </ul>
 </div>

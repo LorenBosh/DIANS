@@ -78,6 +78,19 @@
         {
             width: 150px;
         }
+        #showMoreBtn {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #showMoreBtn:hover {
+            background-color: #777;
+        }
 
     </style>
 </head>
@@ -92,13 +105,15 @@
             <tr><th>Details</th><th>Name</th></tr>
             </thead>
             <tbody>
-            <tr th:each="monument : ${monuments}">
+            <tr th:each="monument, stat : ${monuments}" th:if="${stat.index < 10}">
                 <td><a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></td>
                 <td th:text="${monument.getName()}"></td>
             </tr>
             </tbody>
         </table>
+        <button id="showMoreBtn" onclick="showMore()">Show More</button>
     </div>
+
 
     <div class="search-btn">
         <h2>Search monument:</h2>
@@ -108,8 +123,31 @@
         <a href="/map" class="btn">View map</a>
     </div>
 
-
-
 </main>
+
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    var monuments = /*[[${monuments}]]*/ [];
+
+    function showMore() {
+        var tableBody = document.querySelector('tbody');
+        var currentRowCount = tableBody.querySelectorAll('tr').length;
+
+        for (var i = currentRowCount; i < currentRowCount + 10; i++) {
+            if (i < monuments.length) {
+                var monument = monuments[i];
+                var newRow = document.createElement('tr');
+                newRow.innerHTML = '<td><a href="/details/' + monument.id + '">Details</a></td>' +
+                    '<td>' + monument.name + '</td>';
+                tableBody.appendChild(newRow);
+            } else {
+                /* No more monuments to show, hide the button */
+                document.getElementById('showMoreBtn').style.display = 'none';
+                break;
+            }
+        }
+    }
+    /*]]>*/
+</script>
 </body>
 </html>

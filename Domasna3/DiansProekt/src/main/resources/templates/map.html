@@ -43,27 +43,58 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var map = L.map('map').setView([41.6086, 21.7453], 8);
+        var map = L.map('map').setView([42.0, 21.7], 8);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-        var culturalHeritages = [
-            { name: "Кокино", latitude: 42.2633818, longitude: 21.953118},
-            { name: "Јаја-пашина џамија", latitude: 42.00754015, longitude: 21.44214199},
-            { name:"Манастир Св. Андреј",latitude: 41.9505936, longitude: 21.2991931 },
-            { name: "Спомен Костурница",longitude: 21.78945368, latitude: 41.72329265 },
-            { name: "Спомен куќа Тоше Проески", longitude: 21.24628933, latitude:41.3744405},
-            { name:"Цареви Кули" ,longitude: 22.6298581 ,latitude:41.43246945}
+        fetch('https://raw.githubusercontent.com/LorenBosh/DIANS/main/Domasna3/Database/schema.sql')
+            .then(response => response.text())
+            .then(sqlContent => {
+                const monuments = parseSqlToJSON(sqlContent);
 
-
-        ];
-
-        culturalHeritages.forEach(function (heritage) {
-            L.marker([heritage.latitude, heritage.longitude])
-                .addTo(map)
-                .bindPopup(heritage.name);
-        });
+                monuments.forEach(monument => {
+                    L.marker([monument.Latitude, monument.Longitude])
+                        .addTo(map)
+                        .bindPopup(`<b>${monument.Name}</b><br>${monument.Adress}<br>${monument.Heritage_Type}`);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
     });
+    function parseSqlToJSON(sqlContent) {
+        const jsonData = [];
+        const lines = sqlContent.split('\n');
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            if (line.startsWith('\\.')) {
+                break;
+            }
+            const values = line.split('\t');
+
+            const latitude = parseFloat(values[5]);
+            const longitude = parseFloat(values[4]);
+
+            if (!isNaN(latitude) && !isNaN(longitude)) {
+                const monument = {
+                    OSM_ID: parseInt(values[0]),
+                    Name: values[1],
+                    Country: values[2],
+                    City: values[3],
+                    Longitude: longitude,
+                    Latitude: latitude,
+                    Adress: values[6],
+                    Heritage_Type: values[7],
+                    Opening_Hours: values[8],
+                    Email_adress: values[9],
+                    Phone: values[10],
+                };
+                jsonData.push(monument);
+            }
+        }
+
+        return jsonData;
+    }
+
 </script>
 </body>
 </html>

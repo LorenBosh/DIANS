@@ -46,7 +46,7 @@
     }
 
     button {
-      background-color: #333;
+      background-color: #333333;
       color: #fff;
       padding: 10px 15px;
       border: none;
@@ -62,9 +62,37 @@
     .radio-group {
       display: flex;
     }
+    #home-btn
+    {
+      position: absolute;
+    }
+    .btn
+    {
+      background-color: gray;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #555;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #555;
+    }
   </style>
 </head>
 <body>
+<div id="home-btn">
+  <a href="/" class="btn">Back to main page</a>
+</div>
 <header>
   <h1>Search monuments in Macedonia</h1>
 </header>

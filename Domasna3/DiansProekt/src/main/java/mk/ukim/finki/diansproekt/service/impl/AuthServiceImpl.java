@@ -4,16 +4,16 @@ import mk.ukim.finki.diansproekt.model.User;
 import mk.ukim.finki.diansproekt.model.exceptions.InvalidArgumentsException;
 import mk.ukim.finki.diansproekt.model.exceptions.InvalidUserCredentialsException;
 import mk.ukim.finki.diansproekt.model.exceptions.PasswordsDoNotMatchException;
-import mk.ukim.finki.diansproekt.repository.UserRepository;
+import mk.ukim.finki.diansproekt.repository.impl.UserRepositoryImpl;
 import mk.ukim.finki.diansproekt.service.AuthService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class AuthServiceImpl implements AuthService {
 
-    private final UserRepository userRepository;
+    private final UserRepositoryImpl userRepository;
 
-    public AuthServiceImpl(UserRepository userRepository) {
+    public AuthServiceImpl(UserRepositoryImpl userRepository) {
         this.userRepository = userRepository;
     }
 

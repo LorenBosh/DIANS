@@ -6,7 +6,6 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Monuments")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -18,11 +17,13 @@ public class Monument {
     private Long id;
     private String name;
     private String Country;
-    private String City;
+    @Column(name = "city")
+    private String city;
     private int Longitude;
     private int Latitude;
     private String Address;
-    private String Type;
+    @Column(name = "type")
+    private String type;
     private String OpeningHours;
     private String Email;
     private Long Phone;

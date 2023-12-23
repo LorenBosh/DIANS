@@ -2,7 +2,7 @@ package mk.ukim.finki.diansproekt.service.impl;
 
 import lombok.AllArgsConstructor;
 import mk.ukim.finki.diansproekt.model.Monument;
-import mk.ukim.finki.diansproekt.repository.MonumentRepository;
+import mk.ukim.finki.diansproekt.repository.jpa.MonumentRepository;
 import mk.ukim.finki.diansproekt.service.MonumentService;
 import org.springframework.stereotype.Service;
 
@@ -27,23 +27,23 @@ public class MonumentServiceImpl implements MonumentService {
 
 
     @Override
-    public List<Monument> searchByName(String name,String type){
-        return monumentRepository.searchByName(name,type);
+    public Optional<Monument> searchByName(String name,String type){
+        return monumentRepository.findByNameAndType(name,type);
     }
 
     @Override
-    public List<Monument> searchByCity(String city,String type){
-        return monumentRepository.searchByCity(city,type);
+    public Optional<Monument> searchByCity(String city,String type){
+        return monumentRepository.findByCityAndType(city,type);
     }
 
     @Override
-    public List<Monument> searchCityWithoutType(String city){
-        return monumentRepository.searchCityWithoutType(city);
+    public Optional<Monument> searchCityWithoutType(String city){
+        return monumentRepository.findByCity(city);
     }
 
     @Override
-    public List<Monument> searchNameWithoutType(String name){
-        return monumentRepository.searchNameWithoutType(name);
+    public Optional<Monument> searchNameWithoutType(String name){
+        return monumentRepository.findByName(name);
     }
 
 }

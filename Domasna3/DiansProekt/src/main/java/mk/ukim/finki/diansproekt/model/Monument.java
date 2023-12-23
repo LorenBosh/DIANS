@@ -1,15 +1,20 @@
 package mk.ukim.finki.diansproekt.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 
-@Data
-@Setter
+@Entity
+@Table(name = "Monuments")
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
+@Setter
+@Data
 public class Monument {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String Country;
@@ -21,20 +26,4 @@ public class Monument {
     private String OpeningHours;
     private String Email;
     private Long Phone;
-
-    public Monument(Long id,String name, String country, String city, int longitude, int latitude, String address, String type, String openingHours, String email, Long phone) {
-        this.id = id;
-        this.name = name;
-        Country = country;
-        City = city;
-        Longitude = longitude;
-        Latitude = latitude;
-        Address = address;
-        Type = type;
-        OpeningHours = openingHours;
-        Email = email;
-        Phone = phone;
-    }
-
-
 }

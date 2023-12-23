@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42030097-d62a-4716-962c-20ea81e4fce0" name="Changes" comment="Application Properties ammendments" />
+    <list default="true" id="42030097-d62a-4716-962c-20ea81e4fce0" name="Changes" comment="changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/niki/Documents/5 semestar/Dians/diansProekt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -127,6 +128,7 @@
     <MESSAGE value="Bug fix" />
     <MESSAGE value="test" />
     <MESSAGE value="Application Properties ammendments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Application Properties ammendments" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
 </project>

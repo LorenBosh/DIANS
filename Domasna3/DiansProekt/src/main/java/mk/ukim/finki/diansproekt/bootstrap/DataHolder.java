@@ -33,7 +33,7 @@ public class DataHolder {
     }
 
     //
-    @PostConstruct
+    //@PostConstruct
     public void init() throws SQLException {
         ResourceDatabasePopulator resourceDatabasePopulator=new ResourceDatabasePopulator();
         resourceDatabasePopulator.addScript(new ClassPathResource("schema.sql"));

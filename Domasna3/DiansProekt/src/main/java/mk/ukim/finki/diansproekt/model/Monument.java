@@ -5,7 +5,7 @@ import lombok.*;
 
 import java.util.List;
 
-@Entity
+@Entity(name = "Monuments")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -14,17 +14,26 @@ import java.util.List;
 public class Monument {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+    @Column(name = "name")
     private String name;
-    private String Country;
+    @Column(name = "country")
+    private String country;
     @Column(name = "city")
     private String city;
-    private int Longitude;
-    private int Latitude;
-    private String Address;
+    @Column(name = "longitude")
+    private int longitude;
+    @Column(name = "latitude")
+    private int latitude;
+    @Column(name = "address")
+    private String address;
     @Column(name = "type")
     private String type;
-    private String OpeningHours;
-    private String Email;
-    private Long Phone;
+    @Column(name = "opening_hours")
+    private String openingHours;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "phone")
+    private Long phone;
 }

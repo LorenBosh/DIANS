@@ -10,23 +10,25 @@
 -- Name: Monuments; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE IF NOT EXISTS public.Monuments (
-                                           "OSM_ID" BIGINT PRIMARY KEY ,
+CREATE TABLE IF NOT EXISTS public.monuments (
+                                           "id" BIGINT PRIMARY KEY ,
                                            "name" TEXT,
-                                           "Country" TEXT,
+                                           "country" TEXT,
                                            "city" TEXT,
-                                           "Longitude" NUMERIC(15, 13),
-                                           "Latitude" NUMERIC(10, 8),
-                                           "Adress" TEXT,
+                                           "longitude" NUMERIC(15, 13),
+                                           "latitude" NUMERIC(10, 8),
+                                           "address" TEXT,
                                            "type" TEXT,
-                                           "Opening_Hours" TEXT,
-                                           "Email" TEXT,
-                                           "Phone" BIGINT
+                                           "opening_hours" TEXT,
+                                           "email" TEXT,
+                                           "phone" BIGINT
 );
 
-ALTER TABLE public.Monuments OWNER TO postgres;
+ALTER TABLE public.monuments OWNER TO postgres;
 
-INSERT INTO public.Monuments ("OSM_ID", "name", "Country", "city", "Longitude", "Latitude", "Adress", "type", "Opening_Hours", "Email", "Phone")
+truncate public.monuments;
+
+INSERT INTO public.monuments ("id", "name", "country", "city", "longitude", "latitude", "address", "type", "opening_hours", "email", "phone")
 VALUES (2024605291,'Меморијален центар АСНОМ','North Macedonia','Pelince',21.8500367,42.2782511,'Memorial Center ASNOM, R1207, Pelince, North Macedonia','memorial','always open',NULL,NULL);
 
 

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90530497-b5e6-4416-927a-08e78ca3341d" name="Changes" comment="DB Bug fixes" />
+    <list default="true" id="90530497-b5e6-4416-927a-08e78ca3341d" name="Changes" comment="DB Bug fixes">
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Checkout_at_12_23_2023_3_06_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Checkout_at_12_23_2023_3_06_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Domasna3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Domasna3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,11 +52,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/niki/Documents/5 semestar/Dians/diansProekt/Domasna3",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/niki/Documents/5 semestar/Web Programiranje/kol2022-g1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -77,6 +88,8 @@
       <updated>1703345647899</updated>
       <workItem from="1703345648916" duration="8007000" />
       <workItem from="1703414777601" duration="2802000" />
+      <workItem from="1703427277905" duration="944000" />
+      <workItem from="1703436964261" duration="127000" />
     </task>
     <task id="LOCAL-00001" summary="Proba za data baza da funkcionira">
       <option name="closed" value="true" />

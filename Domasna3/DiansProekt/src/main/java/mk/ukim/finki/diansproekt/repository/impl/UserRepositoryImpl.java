@@ -1,4 +1,4 @@
-package mk.ukim.finki.diansproekt.repository;
+package mk.ukim.finki.diansproekt.repository.impl;
 
 import mk.ukim.finki.diansproekt.bootstrap.DataHolder;
 import mk.ukim.finki.diansproekt.model.User;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public class UserRepository {
+public class UserRepositoryImpl {
     public Optional<User> findByUsername(String username)
     {
         return DataHolder.users.stream().filter(r->r.getUsername().equals(username)).findFirst();

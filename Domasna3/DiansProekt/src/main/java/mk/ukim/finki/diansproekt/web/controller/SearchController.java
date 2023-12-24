@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/search")
@@ -40,7 +41,7 @@ public class SearchController {
                           @RequestParam(name = "type", required = false) String type,
                           @RequestParam(name="searchName", required = false) String searchType2,
                           Model model){
-        List <Monument> monuments = new ArrayList<>();
+        Optional<Monument> monuments ;
 
 
         if (type != null) {

@@ -11,10 +11,10 @@ public interface MonumentService {
 
     Optional <Monument> findById(Long id);
 
-    List<Monument> searchByName(String name,String type);
-    List<Monument> searchByCity(String city,String type);
+    Optional<Monument> searchByName(String name,String type);
+    Optional<Monument> searchByCity(String city,String type);
 
-    List<Monument> searchCityWithoutType(String city);
+    Optional<Monument> searchCityWithoutType(String city);
 
-    List<Monument> searchNameWithoutType(String name);
+    Optional<Monument> searchNameWithoutType(String name);
 }

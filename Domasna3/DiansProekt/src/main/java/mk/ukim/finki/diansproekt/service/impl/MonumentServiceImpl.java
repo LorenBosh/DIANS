@@ -28,12 +28,12 @@ public class MonumentServiceImpl implements MonumentService {
 
     @Override
     public List<Monument> searchByName(String name,String type){
-        return monumentRepository.findByNameAndType(name,type);
+        return monumentRepository.findByNameOrType(name,type);
     }
 
     @Override
     public List<Monument> searchByCity(String city,String type){
-        return monumentRepository.findByCityAndType(city,type);
+        return monumentRepository.findByCityOrType(city,type);
     }
 
     @Override

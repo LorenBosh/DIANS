@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface MonumentRepository extends JpaRepository<Monument,Long> {
     List<Monument> findByName(String name);
     List<Monument> findByCity(String city);
-    List<Monument> findByNameAndType(String name, String type);
-    List<Monument> findByCityAndType(String city,String type);
+    List<Monument> findByNameOrType(String name, String type);
+    List<Monument> findByCityOrType(String city,String type);
 
 }

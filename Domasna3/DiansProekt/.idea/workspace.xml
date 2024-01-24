@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="bug fixes">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Most-Beautiful-Places-in-Macedonia-Featured-Image-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/lakeOhridNorthMacedonia.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/north macedonia citizenship.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturen dizajn-Conceptual.drawio.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturen dizajn-Execute.drawio.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturen dizajn-Implementation.drawio.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturni_stilovi.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/about_us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/main_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/search_results1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Domasna2/tehnicki prototip/DiansProekt/Tehnicki-prototip.mov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listMonuments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listMonuments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/listMonuments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listMonuments.html" afterDir="false" />
-    </list>
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="home page redesign" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +126,7 @@
       <workItem from="1703437092636" duration="1595000" />
       <workItem from="1703444815182" duration="4294000" />
       <workItem from="1704807703587" duration="2146000" />
-      <workItem from="1706104299980" duration="12747000" />
+      <workItem from="1706104299980" duration="13006000" />
     </task>
     <task id="LOCAL-00001" summary="test za rabota so branches">
       <option name="closed" value="true" />
@@ -175,14 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703449607399</updated>
     </task>
-    <task id="LOCAL-00005" summary="bug fixes">
-      <created>1703345169554</created>
+    <task id="LOCAL-00005" summary="home page redesign">
+      <option name="closed" value="true" />
+      <created>1706117409589</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1703345169554</updated>
+      <updated>1706117409590</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +205,8 @@
     <MESSAGE value="test za rabota so branches" />
     <MESSAGE value="Kreiranje infrastuktura za rabota so bazi na podatoci" />
     <MESSAGE value="bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
+    <MESSAGE value="home page redesign" />
+    <option name="LAST_COMMIT_MESSAGE" value="home page redesign" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

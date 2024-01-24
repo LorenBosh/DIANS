@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="bug fixes" />
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="bug fixes">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Most-Beautiful-Places-in-Macedonia-Featured-Image-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/lakeOhridNorthMacedonia.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/north macedonia citizenship.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturen dizajn-Conceptual.drawio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturen dizajn-Execute.drawio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturen dizajn-Implementation.drawio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/Architecture/Architecture/Arhitekturni_stilovi.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/about_us.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/main_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/search_results1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tehnicki prototip/DiansProekt/Tehnicki-prototip.mov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listMonuments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listMonuments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listMonuments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listMonuments.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,33 +53,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/lunadelevska/Desktop/dians/diansProekt/Domasna3/DiansProekt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "83d8f0189e6cf076dee5da0e0880291b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lunadelevska/Desktop/dians/diansProekt/Domasna3/DiansProekt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;83d8f0189e6cf076dee5da0e0880291b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="dc025936-a373-450f-aa84-52892418abc4" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiansProektApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="DiansProekt" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.diansproekt.DiansProektApplication" />
@@ -87,7 +139,9 @@
       <workItem from="1703246582912" duration="8577000" />
       <workItem from="1703330775378" duration="4240000" />
       <workItem from="1703437092636" duration="1595000" />
-      <workItem from="1703444815182" duration="3371000" />
+      <workItem from="1703444815182" duration="4294000" />
+      <workItem from="1704807703587" duration="2146000" />
+      <workItem from="1706104299980" duration="12747000" />
     </task>
     <task id="LOCAL-00001" summary="test za rabota so branches">
       <option name="closed" value="true" />
@@ -113,12 +167,13 @@
       <option name="project" value="LOCAL" />
       <updated>1703447950889</updated>
     </task>
-    <task id="LOCAL-00004" summary="Updated map using the final database">
-      <created>1703340271213</created>
+    <task id="LOCAL-00004" summary="bug fixes">
+      <option name="closed" value="true" />
+      <created>1703449607399</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1703340271213</updated>
+      <updated>1703449607399</updated>
     </task>
     <task id="LOCAL-00005" summary="bug fixes">
       <created>1703345169554</created>
@@ -127,7 +182,7 @@
       <option name="project" value="LOCAL" />
       <updated>1703345169554</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

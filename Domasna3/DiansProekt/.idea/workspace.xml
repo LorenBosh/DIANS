@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="bug fixes" />
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="bug fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/monumentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/monumentDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "WikipediaInformationExtraction",
     "last_opened_file_path": "/Users/lunadelevska/Desktop/dians/diansProekt/Domasna3/DiansProekt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -88,6 +93,7 @@
       <workItem from="1703330775378" duration="4240000" />
       <workItem from="1703437092636" duration="1595000" />
       <workItem from="1703444815182" duration="3371000" />
+      <workItem from="1706105026431" duration="6784000" />
     </task>
     <task id="LOCAL-00001" summary="test za rabota so branches">
       <option name="closed" value="true" />
@@ -169,106 +175,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/MonumentService.java</url>
           <line>13</line>
@@ -306,54 +212,9 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>44</line>
-          <properties class="mk.ukim.finki.diansproekt.service.impl.MonumentServiceImpl" method="searchNameWithoutType">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>39</line>
-          <properties class="mk.ukim.finki.diansproekt.service.impl.MonumentServiceImpl" method="searchCityWithoutType">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>34</line>
-          <properties class="mk.ukim.finki.diansproekt.service.impl.MonumentServiceImpl" method="searchByCity">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>29</line>
-          <properties class="mk.ukim.finki.diansproekt.service.impl.MonumentServiceImpl" method="searchByName">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java</url>
-          <line>23</line>
-          <properties class="mk.ukim.finki.diansproekt.service.impl.MonumentServiceImpl" method="findById">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/repository/jpa/MonumentRepository.java</url>
           <line>13</line>
-          <properties class="mk.ukim.finki.diansproekt.repository.jpa.MonumentRepository" method="findByNameAndType">
+          <properties class="mk.ukim.finki.diansproekt.repository.jpa.MonumentRepository" method="findByNameOrType">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -362,7 +223,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/repository/jpa/MonumentRepository.java</url>
           <line>14</line>
-          <properties class="mk.ukim.finki.diansproekt.repository.jpa.MonumentRepository" method="findByCityAndType">
+          <properties class="mk.ukim.finki.diansproekt.repository.jpa.MonumentRepository" method="findByCityOrType">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

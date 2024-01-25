@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="home page redesign" />
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="search page initial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +127,7 @@
       <workItem from="1703444815182" duration="4294000" />
       <workItem from="1704807703587" duration="2146000" />
       <workItem from="1706104299980" duration="13006000" />
+      <workItem from="1706117538803" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="test za rabota so branches">
       <option name="closed" value="true" />
@@ -168,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706117409590</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="search page initial">
+      <option name="closed" value="true" />
+      <created>1706117766284</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706117766284</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +215,8 @@
     <MESSAGE value="Kreiranje infrastuktura za rabota so bazi na podatoci" />
     <MESSAGE value="bug fixes" />
     <MESSAGE value="home page redesign" />
-    <option name="LAST_COMMIT_MESSAGE" value="home page redesign" />
+    <MESSAGE value="search page initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="search page initial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

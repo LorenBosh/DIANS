@@ -167,7 +167,10 @@
 
 </main>
 
+
 <script th:inline="javascript">
+    var scrollButton=document.getElementById('showMoreBtn')
+
     /*<![CDATA[*/
     var monuments = /*[[${monuments}]]*/ [];
     var brojac=0;
@@ -193,6 +196,11 @@
                 break;
             }
         }
+        var currentPosition =  document.documentElement.scrollTop;
+        window.scrollTo({
+            top:currentPosition+200,
+            behavior:"smooth"
+        })
     }
     /*]]>*/
 </script>

@@ -41,7 +41,7 @@ public class SearchController {
                           @RequestParam(name = "type", required = false) String type,
                           @RequestParam(name="searchName", required = false) String searchType2,
                           Model model){
-        Optional<Monument> monuments ;
+        List<Monument> monuments ;
 
 
         if (type != null) {
@@ -61,7 +61,6 @@ public class SearchController {
             }
 
         }
-
 
         model.addAttribute("monuments", monuments);
         return "searchResults";

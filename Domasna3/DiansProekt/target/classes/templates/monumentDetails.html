@@ -71,7 +71,7 @@
 </div>
 
 <header>
-  <h1 th:text="${monument.getName()}">Name of monument</h1>
+  <h1 id="name" th:text="${monument.getName().toString()}">Name of monument</h1>
 </header>
 
 <section>
@@ -85,6 +85,52 @@
   <h3 th:text="${monument.getEmail()}">Email</h3>
   <h3 th:text="${monument.getPhone()}">Phone</h3>
 </section>
+<section>
+  <div id="extract"></div>
+  <div id="image"></div>
+</section>
 
+
+
+<script th:inline="javascript">
+  /*<![CDATA[*/
+  var nameOf = /*[[${monument.getName()}]]*/ 'default';
+  /*]]>*/
+  nameOf.replace(" ","_");
+  console.log(nameOf);
+  var encodedText = encodeURIComponent(nameOf);
+  var url = 'https://mk.wikipedia.org/api/rest_v1/page/summary/'+encodedText;
+
+  // Create a new XMLHttpRequest object
+  var xmlhttp = new XMLHttpRequest();
+  // Define a function to be called when the request completes
+  xmlhttp.onload = function() {
+    // Parse the JSON data
+    if(this.status===200)
+    {
+      var data = JSON.parse(this.responseText);
+      document.getElementById("extract").innerHTML = data.extract;
+      var thumbnail = data.thumbnail;
+      var source = thumbnail.source;
+      var img = document.createElement("img");
+      img.src = source;
+      document.getElementById("image").appendChild(img);
+    }
+    else{
+      var extract = "No details about this page";
+      document.getElementById("extract").innerHTML = extract;
+    }
+
+    // Add the extract to your HTML page
+  };
+
+
+  // Open a new connection, using the GET request on the URL endpoint
+  xmlhttp.open("GET", url, true);
+
+  // Send the request
+  xmlhttp.send();
+
+</script>
 </body>
 </html>

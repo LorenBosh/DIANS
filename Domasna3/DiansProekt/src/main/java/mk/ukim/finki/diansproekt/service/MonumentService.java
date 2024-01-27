@@ -1,6 +1,7 @@
 package mk.ukim.finki.diansproekt.service;
 
 import mk.ukim.finki.diansproekt.model.Monument;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;

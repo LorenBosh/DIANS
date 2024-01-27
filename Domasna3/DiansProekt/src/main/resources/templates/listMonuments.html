@@ -18,7 +18,7 @@
             position: fixed;
             left: 50%;
             transform: translateX(-50%);
-            bottom: 0;
+            bottom: 0px;
             width: 80%;
             padding: 10px; /* Initial height, adjust as needed */
             transition: max-height 0.5s ease;
@@ -28,6 +28,7 @@
             max-height: 118px;
             border-radius: 5px;
         }
+
 
         table {
             align-content: center;
@@ -62,6 +63,13 @@
             font-size: 24px;
         }
 
+        #karticka table{
+            width:100%;
+        }
+        #karticka td {
+            text-align: left;
+            vertical-align: top;
+        }
         #showMoreButton {
             display: block;
             margin: 0 auto;
@@ -223,9 +231,9 @@
             display: none;
             position: absolute;
             top:50px;
-            left: 1150px;
-            right: 0px; /* Adjust the right distance as needed */
-            transform: rotate(90deg); /* Rotate the button 90 degrees */
+            left: 1178px;
+            right: 0px;
+            transform: rotate(90deg);
             transform-origin: center;
             height: 50px;
             width: 100px;
@@ -244,20 +252,6 @@
     </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.4.0/jquery.mb.YTPlayer.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("body").YTPlayer({
-                videoURL: 'https://youtu.be/NzGHUofYSi4', // Replace with your YouTube video ID
-                containment: 'body',
-                autoPlay: true,
-                mute: true,
-                startAt: 0,
-                opacity: 1,
-                showControls: false,
-                addRaster: true // This option adds a raster pattern to the video to avoid content visibility issues
-            });
-        });
-    </script>
 
 
 </head>
@@ -277,7 +271,7 @@
         <table>
             <tbody>
             <tr th:each="monument, stat : ${monuments}" th:if="${stat.index < 10}">
-                <td id="name" th:text="${monument.getName()}"></td>
+                <td id="name"  th:text="${monument.getName()}" ></td>
                 <td id="details"><a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></td>
             </tr>
             </tbody>
@@ -298,6 +292,7 @@
 
 
 <script th:inline="javascript">
+
     var scrollButton=document.getElementById('showMoreBtn')
 
     /*<![CDATA[*/
@@ -333,6 +328,7 @@
         }, 50);
     }
 
+    var topPosition =  document.documentElement.scrollTop;
     function showMore() {
         var karticka = document.getElementById("karticka");
         brojac++;
@@ -363,7 +359,7 @@
         }
         var currentPosition =  document.documentElement.scrollTop;
         window.scrollTo({
-            top:currentPosition+200,
+            top:currentPosition+150,
             behavior:"smooth"
         })
     }
@@ -371,6 +367,7 @@
     function showLess() {
         var karticka = document.getElementById("karticka");
         karticka.style.maxHeight = '118px';
+
         document.getElementById('showMoreButton').style.display = 'block';
 
         /* Remove the dynamically added rows with fadeOut effect */
@@ -380,10 +377,15 @@
             fadeOut(rows[i]);
         }
 
-        /* Reset the counter after a delay (adjust as needed) */
         setTimeout(function () {
             brojac = 0;
-        }, rows.length * 50); // Delay based on the number of rows and fadeOut speed
+        }, rows.length * 50);
+
+        window.scrollTo({
+            top:topPosition,
+            behavior:"smooth"
+        })
+
     }
     /*]]>*/
 </script>

@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS public.monuments (
                                            "phone" BIGINT
 );
 
-ALTER TABLE public.monuments OWNER TO postgres;
+ALTER TABLE public.monuments OWNER TO fpdbdians_user;
 
 truncate public.monuments;
 

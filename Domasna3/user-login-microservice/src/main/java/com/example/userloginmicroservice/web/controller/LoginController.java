@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping({"/auth","/login"})
+@RequestMapping("/auth")
 public class LoginController {
 
     private final AuthService authService;
@@ -26,7 +26,7 @@ public class LoginController {
         this.authService = authService;
     }
 
-
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestParam String username, @RequestParam String password) {
         try {

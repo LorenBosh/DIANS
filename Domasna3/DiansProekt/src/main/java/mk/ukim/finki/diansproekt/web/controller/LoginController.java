@@ -5,6 +5,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import mk.ukim.finki.diansproekt.model.User;
 import mk.ukim.finki.diansproekt.model.exceptions.InvalidUserCredentialsException;
 import mk.ukim.finki.diansproekt.service.AuthService;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,25 +35,28 @@ public class LoginController {
 
     @PostMapping("/login-form")
     public String login(@RequestParam String username, @RequestParam String password, Model model) {
-        // Create a RestTemplate instance
         RestTemplate restTemplate = new RestTemplate();
 
-        // Prepare the request body
         String requestBody = "username=" + username + "&password=" + password;
 
-        // Send a POST request to the authentication service
-        ResponseEntity<String> authResponseEntity = restTemplate.postForEntity(authServiceUrl + "auth/login", requestBody, String.class);
+        HttpHeaders headers = new HttpHeaders();
 
-        String authResponse = authResponseEntity.getBody();
+        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+        HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, headers);
+
+        ResponseEntity<String> authResponseEntity = restTemplate.postForEntity("http://localhost:9090/auth/login", requestEntity, String.class);
 
         if (authResponseEntity.getStatusCode().is2xxSuccessful()) {
+
+            String authResponse = authResponseEntity.getBody();
             model.addAttribute("authResponse", authResponse);
             return "redirect:/";
         } else {
             // Unsuccessful login
+            String authResponse = authResponseEntity.getBody();
             model.addAttribute("authResponse", authResponse);
             return "login";
         }
-
     }
 }

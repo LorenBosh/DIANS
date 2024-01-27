@@ -1,139 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <title>Search</title>
 
 
+
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
     body
     {
-      background: #333333;
-      margin: 0;
-      display: flex;
-      font-family: Arial;
-    }
-    #left {
-      margin-top: 0;
-      float: left;
-      margin-left: 80px;
-      margin-bottom: 0;
+      background-image: url("https://img.itinari.com/countries/mk-the-former-yugoslav-republic-of-macedonia.jpg?ch=DPR&dpr=2.625&w=1600&s=b02a6caab8e77ad652e465087acc6915");
+      background-size: cover;
+      background-repeat: no-repeat;
       height: 100vh;
-
     }
-    #left img {
-      height: 100%; /* Set the height of the image to 100% */
-      width: auto;
-    }
-    #right {
-      padding: 20px;
-      width: 100px;
-      color: white;
-      flex: 1;
-      padding-top: 100px;
+    #menu {
       display: flex;
-      flex-direction: column; /* Add this line */
-    }
-    label
-    {
-      line-height: 20px;
-    }
-    #name, #city {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      line-height: 50px;
-      width: 450px; /* Adjusted width */
-      border-radius: 15px;
-      display: block;
-      color: white;
-      background: rgba(211, 211, 211, 0.1);
-      border: 2px solid white;
-      margin-left: 20px;
-    }
-    label {
-      font-size: 20px; /* Adjusted font size */
-      color: white;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      height: 100px;
+      font-family: 'Arial',sans-serif;
       font-weight: bold;
-      padding: 10px; /* Added padding for better aesthetics */
-      border-radius: 5px;
-      display: inline-block;
-      margin-bottom: 0;
-
     }
 
-    #type {
-      margin-bottom: 10px; /* Adjusted margin */
+    #menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    form {
+    #menu li {
+      display: inline;
+      font-size: 20px;
+      margin-right: 70px;
+      color: white;
+    }
+    form
+    {
+      position: absolute;
+      bottom: 40px;
+      right: 70px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 50px;
+      width: 100%;
+      max-width: 450px;
+      max-height: 800px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: lighter;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
     }
 
-    .search {
-      margin-top: 10px;
+    input {
+      /* You can change the color as per your design */
+      height: 50px;
+      outline: none; /* Remove the default input focus outline */
+      padding: 5px; /* Adjust the padding as needed */
+      margin: 10px 0; /* Adjust the margin as needed */
+      display: block; /* Make the input a block element to occupy full width */
+      width: 100%;
+      background: #f3f2f2;
+      border-radius: 20px;
+      border: none;
     }
+    .radio-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
 
-    #radio {
-      margin-bottom: 20px;
     }
-
-    button#map {
-      margin-top: 10px;
-    }
-    button
+    .radio-group label
     {
-      border-radius: 15px;
-      height: 40px;
-      width: 150px;
-      background: none;
-      border: white 2px solid;
+      font: 600 20px/18px 'Lato';
+      font-weight: bold;
       color: white;
-      margin-left: 20px;
-      font-size: 20px;
-      font-family: Arial, sans-serif;
-      transition: background-color 0.3s ease;
-      margin-bottom: 50px;
+      padding-left: 10px;
+      margin-top: 13px;
+      margin-right: 8px;
     }
-    button:hover
+    #sliki
     {
-      background: gainsboro;
-      opacity: 0.2;
-    }
+      display: inline-flex;
+      justify-content: space-between;
 
+    }
+    .slika {
+      display: inline-block;
+      text-align: center; /* Center the content within each .slika div */
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .slika p
+    {
+      font: 600 22px/18px 'Lato';
+      font-weight: bold;
+      color: white;
+      padding-left: 10px;
+    }
+    img
+    {
+      height: 100px;
+      width: 100px;
+    }
+    input::placeholder
+    {
+      font: 600 22px/18px 'Lato';
+      font-weight: bolder;
+      color: grey;
+      text-align: center;
+    }
 
   </style>
 </head>
+
 <body>
-<div id="left">
-  <img src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/1008x1134/north%20macedonia%20citizenship.jpg">
+
+<!-- Search by Name -->
+<div id="menu">
+  <ul>
+    <li>ABOUT US</li>
+    <li>LOGIN</li>
+    <li>HOME</li>
+    <li>MAP</li>
+  </ul>
 </div>
+<form method="post" th:action="@{/search/search1}">
+  <div id="sliki">
+    <div class="slika"><img src="https://static.vecteezy.com/system/resources/previews/009/314/440/original/earth-globe-clip-art-vector-illustration-isolated-free-png.png"><p>34 </br> cities</p></div>
+    <div class="slika" ><img src="https://www.creativefabrica.com/wp-content/uploads/2020/12/29/Ancient-Greek-Temple-Embroidery-7432777-1.png"><p>300 monuments</p></div>
+  </div>
+  <input type="text" name="name" id="name" placeholder="Search by name...">
+  <input type="text" name="name" id="city" placeholder="Search by city...">
 
+  <div class="radio-group">
+    <input type="radio" name="type" value="museum" id="museum">
+    <label for="museum">Museum</label>
+    <input type="radio" name="type" value="monument" id="monument">
+    <label for="monument">Monument</label>
+    <input type="radio" name="type" value="archaeological_site" id="archaeological_site">
+    <label for="archaeological_site">Archaeological Site</label>
+    <input type="radio" name="type" value="church" id="church">
+    <label for="church">Church</label>
+  </div>
+</form>
 
-<div id="right">
-  <!-- Search by Name -->
-  <form method="post" th:action="@{/search/search1}">
-    <label for="name">SEARCH BY NAME:</label>
-    <input type="text" name="name" id="name">
-    <button type="submit" name="searchName">Search</button>
-
-    <label for="city">SEARCH BY CITY:</label>
-    <input type="text" name="name" id="city">
-    <button type="submit" name="searchCity">Search</button>
-
-    <label>TYPE:</label>
-    <div class="radio-group">
-      <input type="radio" name="type" value="museum" id="museum">
-      <label for="museum">Museum</label>
-      <input type="radio" name="type" value="monument" id="monument">
-      <label for="monument">Monument</label>
-      <input type="radio" name="type" value="archaeological_site" id="archaeological_site">
-      <label for="archaeological_site">Archaeological Site</label>
-      <input type="radio" name="type" value="church" id="church">
-      <label for="church">Church</label>
-    </div>
-  </form>
-</div>
 
 
 <!--<form method="get" th:action="@{/search/search3}">-->

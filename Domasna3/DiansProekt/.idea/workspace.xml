@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="Render Microservice">
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="Dockerfile added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/searchResults.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/web/controller/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706385619922</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dockerfile added">
+      <option name="closed" value="true" />
+      <created>1706386453836</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706386453836</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +259,7 @@
     <MESSAGE value="SQl Script Data Populating" />
     <MESSAGE value="code refractoring" />
     <MESSAGE value="Render Microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Render Microservice" />
+    <MESSAGE value="Dockerfile added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile added" />
   </component>
 </project>

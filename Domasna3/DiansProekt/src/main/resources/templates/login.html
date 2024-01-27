@@ -4,18 +4,132 @@
     <meta charset="UTF-8">
     <title>Login form</title>
     <link href="/main.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+        body {
+            margin: 0;
+            color: black;
+            background:#D0DFF0;
+            font: 600 16px/18px 'Lato';
+        }
+
+        *,
+        *:after,
+        *:before {
+            box-sizing: border-box;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            background:#f3f2f2 ;
+            padding: 50px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 350px;
+            max-height: 800px;
+            margin: auto;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #E3E3E3;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+            font-weight: lighter;
+            margin-bottom: 20px; /* Add margin to create space between form and other elements */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid #000; /* You can change the color as per your design */
+            outline: none; /* Remove the default input focus outline */
+            padding: 5px; /* Adjust the padding as needed */
+            margin: 10px 0; /* Adjust the margin as needed */
+            display: block; /* Make the input a block element to occupy full width */
+            width: 80%;
+            background: #f3f2f2;
+        }
+        input::placeholder
+        {
+            font: 600 19px/18px 'Lato';
+            font-weight: lighter;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        #submit
+        {
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            background-color: transparent;
+            border: 2px solid #555555;
+            color: #555555;
+            margin-top: 30px;
+
+        }
+
+        #natpis
+        {
+            font-family: Lato, serif;
+            margin-bottom: 40px;
+            font-size: 30px;
+            line-height: 30px;
+
+        }
+        #text
+        {
+            margin-bottom: 0;
+            line-height: 29px;
+        }
+        #subtext
+        {
+            margin-top: 6px;
+            color: #555555;
+            font-weight: lighter;
+        }
+
+
+
+
+
+
+    </style>
 </head>
 <!-- koristime POST method za da se osigurame deka informaciite ke bidat isprateni bezbedno -->
 <body>
+
 <form th:method="POST" th:action="@{/login}">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username"/><br/>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password"/><br/>
+    <div id="natpis">
+        <p id="text">Get a step closer and discover Macedonia</p>
+        <p id="subtext">by signing in to our page...</p>
+    </div>
+    <input type="text" id="username" name="username" placeholder="Username"/><br/>
+    <input type="password" id="password" name="password" placeholder="Password"/><br/>
     <div th:if="${hasError}" class="error">
         <div th:text="${error}"></div>
     </div>
-
     <div class="row">
         <div class="col-md-3">
             <button id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
@@ -24,7 +138,6 @@
             <a href="/register" class="btn btn-lg btn-block btn-light">Register here</a>
         </div>
     </div>
-
 </form>
 </body>
 </html>

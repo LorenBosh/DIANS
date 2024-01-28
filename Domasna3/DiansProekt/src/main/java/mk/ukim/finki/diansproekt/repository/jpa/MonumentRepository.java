@@ -9,9 +9,10 @@ import java.util.Optional;
 
 @Repository
 public interface MonumentRepository extends JpaRepository<Monument,Long> {
-    List<Monument> findByName(String name);
+    List<Monument> findByNameStartingWith(String name);
     List<Monument> findByCity(String city);
-    List<Monument> findByNameOrType(String name, String type);
-    List<Monument> findByCityOrType(String city,String type);
+    List<Monument> findByNameStartingWithAndType(String name, String type);
+    List<Monument> findByCityAndType(String city,String type);
 
+    List<Monument> findByType(String type);
 }

@@ -1,93 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
-  <title>Search results</title>
+  <title>Search</title>
+
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Lato', sans-serif;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      background: url('https://i0.wp.com/livingourmemories.com/wp-content/uploads/2023/09/Things-to-see-in-Skopje-North-Macedonia-Square-3.jpg?resize=1440%2C960&ssl=1') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    #menu li{
+      display: inline;
+      font-size: 20px;
+      padding-left: 20px;
+      color: white;
+      opacity: 1;
+      z-index: 1;
+      font-size: 20px;
+      padding-right: 40px;
+    }
+    #menu
+    {
+      backdrop-filter: none;
+      margin-top: 0;
+      color: white;
+    }
+
+    #div_1 {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 25px 20px;
+      padding-left: 350px;
+      align-content: center;
     }
 
     #div_2 {
-      width: 800px;
-      margin: auto;
-      background-color: #fff;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+    }
+
+    #div_2 li {
+      width: 300px;
+      height: 150px;
+      margin: 20px;
+      background-color: #f3f2f2;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: #2b3848;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    h2 {
-      color: #333;
-    }
-
-    ul {
-      list-style-type: none;
+    #div_2 ul {
+      list-style: none;
       padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
     }
 
-    li {
-      margin-bottom: 10px;
-    }
-
-    span {
-      margin-right: 10px;
+    #div_2 span {
+      display: block;
     }
 
     a {
       text-decoration: none;
-      color: #333;
+      color: white;
       font-weight: bold;
     }
 
     a:hover {
-      color: #555;
-    }
-    #div_2
-    {
-      margin-top: 40px;
-    }
-    #home-btn {
-      display: block;
-      position: absolute;
-      top: 5px;
-      left: 10px;
-      font-family: "Times New Roman", sans-serif;
-      font-size: medium;
+      color: lightgray;
     }
 
-    .btn {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+    #details{
+      color: #2b3848;
     }
-
-
-
   </style>
 </head>
+
 <body>
-<div id="home-btn">
-  <a href="/" class="btn">Back to main page</a>
-</div>
-<div id="div_2">
-  <h2>Search Results:</h2>
+
+<div id="menu">
   <ul>
-    <li th:each="monument : ${monuments}">
-      <span th:text="${monument.name}"></span>
-      <span th:text="${monument.city}"></span>
-      <span th:text="${monument.type}"></span>
-      <span><a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></span>
-    </li>
+    <li><a th:href="@{'/aboutUs'}">ABOUT US</a></li>
+    <li><a th:href="@{'/search'}">SEARCH</a></li>
+    <li><a th:href="@{'/map'}">MAP</a></li>
+    <li><a th:href="@{'/'}">HOME</a></li>
+
   </ul>
 </div>
+
+<div id="div_1">
+  <div id="div_2">
+    <ul>
+      <li th:each="monument : ${monuments}">
+        <b>
+          <span th:text="${monument.name}"></span>
+          <span th:text="${monument.city}"></span>
+          <span th:text="${monument.type}"></span>
+        </b>
+        <a id="details" th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 </body>
 </html>

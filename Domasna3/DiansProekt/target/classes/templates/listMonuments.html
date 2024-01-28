@@ -4,9 +4,13 @@
     <meta charset="utf-8">
 
     <title>Cultural and Historic Monuments in Macedonia</title>
+
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+        @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
         body {
-            background-image: url('https://mldvwwasb8tu.i.optimole.com/cb:esbD~6200b/w:1400/h:933/q:90/ig:avif/f:best/https://travelaway.me/wp-content/uploads/2021/02/lake-ohrid-north-macedonia.jpg');
+            font-family: 'Lato', sans-serif;
+            background-image: url('https://www.lot.com/content/dam/lot/lot-com/destination-photos/macedonia/ochryda/ohrid-north-macedonia-10.jpg');
             background-size: cover;
             background-position: center;
             background-repeat:repeat-y;
@@ -14,7 +18,7 @@
         }
 
         #karticka {
-            backdrop-filter: blur(7px);
+            background-color: #f3f2f2;
             position: fixed;
             left: 50%;
             transform: translateX(-50%);
@@ -26,7 +30,11 @@
             border-left: lightgray 1px solid;
             border-right: lightgray 1px solid;
             max-height: 118px;
-            border-radius: 5px;
+            border-radius: 10px;
+            color: #2b3848;
+            font-size: 18px;
+            justify-content: center;
+            align-content: center;
         }
 
 
@@ -34,33 +42,27 @@
             align-content: center;
 
         }
-        #details
-        {
-            text-decoration: none;
-            color: white;
-        }
         tr
         {
             margin-top: 20px;
             display: inline;
-            color: white;
-            font-size: 17px;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+            font-size: 19px;
+            color: #2b3848;
             margin-left: 30px;
             margin-right: 30px;
             margin-bottom: 10px;
 
         }
-        #name
-        {
-            margin-top: 30px;
-        }
 
         #naslov {
             color: white;
-            text-align: center;
-            padding-top: 70px;
-            font-size: 24px;
+            text-align: right;
+            font-family: "Nuni", sans-serif;
+            width: 700px;
+            height: 1000px;
+            padding-top: 270px;
+            padding-left: 600px;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         }
 
         #karticka table{
@@ -70,63 +72,17 @@
             text-align: left;
             vertical-align: top;
         }
-        #showMoreButton {
-            display: block;
-            margin: 0 auto;
-            margin-top: 20px;
-            font-family: Arial,sans-serif;
 
-            transition: background-color 0.3s ease;
-            background: linear-gradient(to bottom, #ffffff, #dcdcdc);
-            color: white;
-
-        }
-        #naslov
-        {
-            width: 700px;
-            height: 1000px;
-            margin: auto;
-            padding-top: 100px;
-        }
         #naslov>p
         {
-            font-family: Georgia, serif;
-            font-size: 50px;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Larger shadow with increased offsets and blur radius */
-            color: #ffffff;
-        }
-        #search
-        {
-            display: block;
-            position: absolute;
-            right: 80px;
-            top:10px;
-        //box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            height: 40px;
-            width: 150px;
-            background: none;
-            border: white 2px solid;
-        }
-        #search a
-        {
-            position: absolute;
-            right: 42px;
-            top:10px;
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            transition: background-color 0.3s ease;
-            background: none;
-            font-weight: bold;
-            border-radius: 15px;
-            text-decoration: none;
+            font-size: 57px;
+            /* Larger shadow with increased offsets and blur radius */
             color: white;
-
         }
         #details a
         {
             text-decoration: none;
-            color: lightgray;;
+            color: #2b3848;
         }
         #search :hover {
             opacity: 0.2; /* Adjust the opacity value as needed */
@@ -141,64 +97,43 @@
             transform: translateX(-50%);
             height: 50px;
             width: 200px;
-            font-size: 17px;
-            border-radius: 15px;
-            border: 1px solid white;
-            font-weight: bold;
-            background: none;
-            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            border: #f3f2f2;
+            background: #f3f2f2;
+            color: #2b3848;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
-        #showMoreButton:hover
-        {
-            opacity: 0.5; /* Adjust the opacity value as needed */
-            cursor: pointer;
+
+        #menu {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            height: 100px;
         }
-        #menu li{
+
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
             display: inline;
             font-size: 20px;
-            padding-left: 20px;
+            padding-right: 40px;
             color: white;
-            opacity: 1;
-            z-index: 1;
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-        }
-        #menu
-        {
-            backdrop-filter: none;
-            margin-top: 0;
-            color: white;
-
-        }
-        .map-btn
-        {
-            display: block;
-            position: absolute;
-            right: 270px;
-            top:10px;
-        //box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            height: 40px;
-            width: 150px;
-            background: none;
-            border: white 2px solid;
         }
 
-        .map-btn a
-        {
+        #menu a{
             text-decoration: none;
-            position: absolute;
-            right: 24px;
-            width: 100px;
-            top:10px;
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            transition: background-color 0.3s ease;
-            background: none;
-            font-weight: bold;
-            border-radius: 15px;
             color: white;
-
         }
         ul
         {
@@ -211,20 +146,9 @@
 
         td {
             font-size: 18px;
-            font-family: Arial, sans-serif;
             padding: 15px; /* Increase padding for better spacing */
             text-align: center;
             border-bottom: 1px solid lightgray;
-        }
-        .monument-link {
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            text-decoration: none;
-        }
-        .details-link {
-            color: lightgray;
-            text-decoration: none;
         }
 
         #showLessButton {
@@ -238,160 +162,74 @@
             height: 50px;
             width: 100px;
             font-size: 17px;
-            border-radius: 15px;
-            border: 1px solid white;
-            font-weight: bold;
-            background: transparent;
-            color: white;
+            background: #f3f2f2;
+            border-radius: 10px;
+            border: #f3f2f2;
+            color: #2b3848;
         }
 
         #showLessButton:hover {
             opacity: 0.5;
             cursor: pointer;
         }
+
+        #showMoreButton:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: #2b3848;
+        }
+        a:hover {
+            color: lightgray;
+        }
+
+        .monument-link a{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.4.0/jquery.mb.YTPlayer.min.js"></script>
-
 
 </head>
 <body>
 <div id="menu">
     <ul>
-        <li>ABOUT US</li>
-        <li>LOGIN</li>
-        <li>REGISTER</li>
+        <li><a th:href="@{'/login-form'}">LOGIN</a></li>
+        <li><a th:href="@{'/aboutUs'}">ABOUT US</a></li>
+        <li><a th:href="@{'/search'}">SEARCH</a></li>
+        <li><a th:href="@{'/map'}">MAP</a></li>
     </ul>
 </div>
 <div id="naslov">
-    <p>Explore<br>the <b>cultural</b> and <b>historic</b> monuments in <br><b>Macedonia</b></p>
+    <p>EXPLORE<br>THE <b>CULTURAL</b> AND <b>HISTORIC</b> MONUMENTS <br><b>IN MACEDONIA</b></p>
 </div>
 <main>
     <div id="karticka">
         <table>
             <tbody>
-            <tr th:each="monument, stat : ${monuments}" th:if="${stat.index < 10}">
-                <td id="name"  th:text="${monument.getName()}" ></td>
-                <td id="details"><a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></td>
-            </tr>
+<!--            <tr th:each="monument, stat : ${monuments}" th:if="${stat.index < 10}">-->
+<!--                <td id="name"  th:text="${monument.getName()}" ></td>-->
+<!--                <td id="details"><a id="details1" th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a></td>-->
+<!--            </tr>-->
             </tbody>
         </table>
-        <button id="showMoreButton" onclick="showMore()">Show Monuments</button>
-        <button id="showLessButton" onclick="showLess()">Show Less</button>
+        <button id="showMoreButton" >Show Monuments</button>
+        <button id="showLessButton" >Show Less</button>
     </div>
 
 
-    <div id="search">
-        <a href="/search" class=".button">Search</a>
-    </div>
-    <div class="map-btn">
-        <a href="/map" class="btn">View map</a>
-    </div>
+<div  id="monuments-data" style="display:none;">
+    [[${monumentsForJS}]]
+</div>
 
 </main>
 
-
-<script th:inline="javascript">
-
-    var scrollButton=document.getElementById('showMoreBtn')
-
-    /*<![CDATA[*/
-    var monuments = /*[[${monuments}]]*/ [];
-    var brojac = 0;
-
-    function fadeIn(element) {
-        var opacity = 0;
-        element.style.opacity = opacity;
-
-        var fadeInInterval = setInterval(function () {
-            if (opacity < 1) {
-                opacity += 0.05;
-                element.style.opacity = opacity;
-            } else {
-                clearInterval(fadeInInterval);
-            }
-        }, 50);
-    }
-
-    function fadeOut(element) {
-        var opacity = 1;
-        element.style.opacity = opacity;
-
-        var fadeOutInterval = setInterval(function () {
-            if (opacity > 0) {
-                opacity -= 0.05; // Adjust the step to control the speed
-                element.style.opacity = opacity;
-            } else {
-                clearInterval(fadeOutInterval);
-                element.remove();
-            }
-        }, 50);
-    }
-
-    var topPosition =  document.documentElement.scrollTop;
-    function showMore() {
-        var karticka = document.getElementById("karticka");
-        brojac++;
-
-        if (brojac === 1) {
-            karticka.style.maxHeight = '600px';
-            document.getElementById('showLessButton').style.display = 'block';
-        }
-
-        var tableBody = document.querySelector('tbody');
-        var currentRowCount = tableBody.querySelectorAll('tr').length;
-
-        for (var i = currentRowCount; i < currentRowCount + 10; i++) {
-            if (i < monuments.length) {
-                var monument = monuments[i];
-                var newRow = document.createElement('tr');
-                newRow.innerHTML = '<td id="name"><a class="monument-link" href="/details/' + monument.id + '">' + monument.name + '</a></td>' +
-                    '<td><a class="details-link" href="/details/' + monument.id + '">Details</a></td>';
-                tableBody.appendChild(newRow);
-
-                /* Apply fadeIn effect to the new row */
-                fadeIn(newRow);
-            } else {
-                /* No more monuments to show, hide the button */
-                document.getElementById('showMoreButton').style.display = 'none';
-                break;
-            }
-        }
-        var currentPosition =  document.documentElement.scrollTop;
-        window.scrollTo({
-            top:currentPosition+150,
-            behavior:"smooth"
-        })
-    }
-
-    function showLess() {
-        var karticka = document.getElementById("karticka");
-        karticka.style.maxHeight = '118px';
-
-        document.getElementById('showMoreButton').style.display = 'block';
-
-        /* Remove the dynamically added rows with fadeOut effect */
-        var tableBody = document.querySelector('tbody');
-        var rows = tableBody.querySelectorAll('tr');
-        for (var i = 0; i < rows.length; i++) {
-            fadeOut(rows[i]);
-        }
-
-        setTimeout(function () {
-            brojac = 0;
-        }, rows.length * 50);
-
-        window.scrollTo({
-            top:topPosition,
-            behavior:"smooth"
-        })
-
-    }
-    /*]]>*/
-</script>
-
-
-
+<script src="/js/listMonuments.js"></script>
 
 </body>
 </html>

@@ -36,7 +36,7 @@ public class RegisterController {
 
         HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, headers);
 
-        ResponseEntity<String> authResponseEntity = restTemplate.postForEntity("http://localhost:9090/auth/register", requestEntity, String.class);
+        ResponseEntity<String> authResponseEntity = restTemplate.postForEntity("https://loginmicroservice-859j.onrender.com/auth/register", requestEntity, String.class);
 
         String authResponse = authResponseEntity.getBody();
         if(!authResponse.contains("Registration failed: password doesnt match ") && !authResponse.contains("Registration failed")){

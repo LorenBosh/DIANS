@@ -20,7 +20,7 @@ public class RegistrationController {
     public RegistrationController(AuthService authService) {
         this.authService = authService;
     }
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "https://monumentsmacedonia.onrender.com")
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestParam String username,
                                                @RequestParam String password,

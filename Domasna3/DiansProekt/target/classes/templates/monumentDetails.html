@@ -3,92 +3,110 @@
 <head>
   <meta charset="utf-8">
   <title>Monument details</title>
+
   <style type="text/css">
-    body {
-      width: 800px;
-      margin: auto;
-      font-family: Arial, sans-serif;
+
+    body{
+      font-family: 'Lato', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      background: url("https://lp-cms-production.imgix.net/features/2016/10/Camp-Shar-Mt-Macedonia-08d7c489fb12.jpg") no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
     }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
+    #menu {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: flex-end;
       padding: 10px;
+      height: 100px;
     }
 
-    section {
-      float: left;
-      margin: 20px 0;
-      width: 63%;
+    #menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    aside {
-      float: right;
-      margin: 20px 0;
-      width: 30%;
+    #menu li {
+      display: inline;
+      font-size: 20px;
+      margin-right: 40px;
+      color: white;
     }
 
-    h1, h2 {
-      margin-top: 0;
+    header{
+      color: white;
+      font-size: 22px;
     }
 
-    table {
-      width: 100%;
+    section{
+      color: #2b3848; /* Changed the font color to black */
+      font-size: 18px;
+      position: fixed;
+      bottom: 0px;
+      width: 350px;
     }
 
-    table, td, th {
-      border: 1px solid #333;
-      padding: 8px;
+    #extract{
+      color: #2b3848; /* Changed the font color to black */
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 300px;
+      margin-top: 50px;
+      width: 350px;
+      padding-right: 10px;
     }
-    #home-btn {
-      display: block;
+
+    .square{
+      width: 400px;
+      background-color: #f3f2f2;
       position: absolute;
-      top: 5px;
-      left: 10px;
-      font-family: "Times New Roman", sans-serif;
-      font-size: medium;
+      left:0px;
+      height: 100vh;
+      padding-left: 20px;
+      padding-top: 30px;
     }
-    .btn {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
+    h1{
+      color: #2b3848; /* Changed the font color to black */
     }
   </style>
+
 </head>
 <body>
-<div id="home-btn">
-  <a href="/" class="btn">Back to main page</a>
+
+<div id="menu">
+  <ul>
+      <li>ABOUT US</li>
+      <li>SEARCH</li>
+      <li>HOME</li>
+      <li>MAP</li>
+  </ul>
 </div>
 
-<header>
-  <h1 id="name" th:text="${monument.getName().toString()}">Name of monument</h1>
-</header>
+<div class="square">
 
-<section>
-  <h3 th:text="${monument.getCountry()}">Country</h3>
-  <h3 th:text="${monument.getCity()}">City</h3>
-  <h3 th:text="${monument.getLongitude()}">Longitude</h3>
-  <h3 th:text="${monument.getLatitude()}">Latitude</h3>
-  <h3 th:text="${monument.getAddress()}">Address</h3>
-  <h3 th:text="${monument.getType()}">Type</h3>
-  <h3 th:text="${monument.getOpeningHours()}">Opening Hours</h3>
-  <h3 th:text="${monument.getEmail()}">Email</h3>
-  <h3 th:text="${monument.getPhone()}">Phone</h3>
-</section>
-<section>
+  <h1 id="name" th:text="${monument.getName().toString()}">Name of monument</h1>
+
   <div id="extract"></div>
-  <div id="image"></div>
-</section>
+
+  <section>
+    <h3 th:text="${monument.getCity()}">City</h3>
+    <h3 th:text="${monument.getAddress()}">Address</h3>
+    <h3 th:text="${monument.getType()}">Type</h3>
+    <h3 th:text="${monument.getOpeningHours()}">Opening Hours</h3>
+    <h3 th:text="${monument.getEmail()}">Email</h3>
+    <h3 th:text="${monument.getPhone()}">Phone</h3>
+  </section>
+
+</div>
 
 
 

@@ -31,10 +31,10 @@ public class LoginController {
     public ResponseEntity<?> login(@RequestParam String username, @RequestParam String password) {
         try {
             User user = authService.login(username, password);
-            // Consider using JWT or some other token-based authentication mechanism and return the token in the response
             return ResponseEntity.ok().body(user.getName());
         } catch (InvalidUserCredentialsException exception) {
-            return ResponseEntity.status(401).body(exception.getMessage());
+
+            return ResponseEntity.ok().body("fail");
         }
     }
 

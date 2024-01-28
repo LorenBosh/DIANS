@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="monumentDetails User interface improvements">
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="monumentDetails User interface improvements"/>
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/aboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="search page initial">
+      <change afterPath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/web/controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
@@ -15,6 +18,17 @@
       <change beforePath="$PROJECT_DIR$/target/classes/templates/monumentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/monumentDetails.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/searchResults.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/listMonuments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/listMonuments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/listMonuments.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/listMonuments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/searchResults.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/bootstrap/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/bootstrap/DataHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/web/controller/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +49,6 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/../.." value="WikipediaInformationExtraction" />
-        <entry key="$PROJECT_DIR$/../.." value="InterfaceRedesign" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -74,13 +87,35 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.55334115&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;83d8f0189e6cf076dee5da0e0880291b&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/FilipRabota/DIANS/Domasna3/DiansProekt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.55334115",
+    "spring.configuration.checksum": "83d8f0189e6cf076dee5da0e0880291b",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -255,7 +290,6 @@
     <MESSAGE value="Kreiranje infrastuktura za rabota so bazi na podatoci" />
     <MESSAGE value="SQl Script Data Populating" />
     <MESSAGE value="code refractoring" />
-    <MESSAGE value="monumentDetails User interface improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="monumentDetails User interface improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refractoring" />
   </component>
 </project>

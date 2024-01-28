@@ -10,49 +10,44 @@
     @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
     body
     {
-      background-image: url("https://img.itinari.com/countries/mk-the-former-yugoslav-republic-of-macedonia.jpg?ch=DPR&dpr=2.625&w=1600&s=b02a6caab8e77ad652e465087acc6915");
+      background-image: url("https://lp-cms-production.imgix.net/image_browser/NorthMacedonia-HIRES.jpg");
       background-size: cover;
       background-repeat: no-repeat;
+      font-family:'Lato',sans-serif ;
       height: 100vh;
+      backdrop-filter: saturate(80%);
     }
-    #menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      height: 100px;
-      font-family: 'Arial',sans-serif;
-      font-weight: bold;
-    }
-
-    #menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    #menu li {
+    #menu li{
       display: inline;
       font-size: 20px;
-      margin-right: 70px;
+      padding-left: 20px;
       color: white;
+      opacity: 1;
+      z-index: 1;
+      font-size: 20px;
+      padding-right: 40px;
     }
-    form
+    #menu
     {
-      position: absolute;
-      bottom: 40px;
-      right: 70px;
-      margin: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      backdrop-filter: none;
+      margin-top: 0;
+      color: white;
+
+    }
+    form {
+      position: fixed;
+      bottom: 20px; /* Adjust the distance from the bottom as needed */
+      right: 50px; /* Adjust the distance from the right as needed */
+      color: #2b3848;
+      background: #f3f2f2;
+      border-radius: 5px;
       padding: 50px;
-      width: 100%;
+      width: 450px;
       max-width: 450px;
       max-height: 800px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: end;
       align-items: center;
       font-weight: lighter;
     }
@@ -62,31 +57,30 @@
     }
 
     input {
-      /* You can change the color as per your design */
-      height: 50px;
+      border: none;
+      border-bottom: 2px solid #000; /* You can change the color as per your design */
       outline: none; /* Remove the default input focus outline */
       padding: 5px; /* Adjust the padding as needed */
-      margin: 10px 0; /* Adjust the margin as needed */
+      /* Adjust the margin as needed */
       display: block; /* Make the input a block element to occupy full width */
-      width: 100%;
+      width: 80%;
+      margin-top: 40px;
       background: #f3f2f2;
-      border-radius: 20px;
-      border: none;
     }
     .radio-group {
       display: flex;
       justify-content: space-between;
-      margin-top: 30px;
+      margin-top: 10px;
 
     }
     .radio-group label
     {
-      font: 600 20px/18px 'Lato';
-      font-weight: bold;
-      color: white;
+      font: 600 19px/18px 'Lato';
+      font-weight: bolder;
       padding-left: 10px;
-      margin-top: 13px;
+      margin-top: 60px;
       margin-right: 8px;
+      color: #2b3848;
     }
     #sliki
     {
@@ -102,9 +96,9 @@
     }
     .slika p
     {
-      font: 600 22px/18px 'Lato';
+      font: 600 19px/18px 'Lato';
       font-weight: bold;
-      color: white;
+      color: #2b3848;;
       padding-left: 10px;
     }
     img
@@ -114,11 +108,12 @@
     }
     input::placeholder
     {
-      font: 600 22px/18px 'Lato';
-      font-weight: bolder;
-      color: grey;
-      text-align: center;
+      font: 600 16px/18px 'Lato';
+      font-weight: lighter;
+      padding-left: 10px;
+      color: #2b3848;;
     }
+
 
   </style>
 </head>
@@ -129,15 +124,14 @@
 <div id="menu">
   <ul>
     <li>ABOUT US</li>
-    <li>LOGIN</li>
     <li>HOME</li>
     <li>MAP</li>
   </ul>
 </div>
 <form method="post" th:action="@{/search/search1}">
   <div id="sliki">
-    <div class="slika"><img src="https://static.vecteezy.com/system/resources/previews/009/314/440/original/earth-globe-clip-art-vector-illustration-isolated-free-png.png"><p>34 </br> cities</p></div>
-    <div class="slika" ><img src="https://www.creativefabrica.com/wp-content/uploads/2020/12/29/Ancient-Greek-Temple-Embroidery-7432777-1.png"><p>300 monuments</p></div>
+    <div class="slika"><img src="https://cdn-icons-png.flaticon.com/512/921/921439.png"><p>34 cities</p></div>
+    <div class="slika" ><img src="https://cdn-icons-png.flaticon.com/512/188/188388.png"><p>300 monuments</p></div>
   </div>
   <input type="text" name="name" id="name" placeholder="Search by name...">
   <input type="text" name="name" id="city" placeholder="Search by city...">

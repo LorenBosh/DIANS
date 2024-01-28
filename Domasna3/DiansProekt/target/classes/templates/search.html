@@ -10,45 +10,39 @@
     @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
     body
     {
-      background-image: url("https://restlessvoyager.com/wp-content/uploads/2023/06/ik-north-macedonia-road.jpg");
+      background-image: url("https://lp-cms-production.imgix.net/image_browser/NorthMacedonia-HIRES.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       font-family:'Lato',sans-serif ;
       height: 100vh;
       backdrop-filter: saturate(80%);
     }
-    #menu {
-      display: flex;
-      margin-left: 150px;
-      padding: 10px;
-      height: 100px;
-      font-family: 'Arial',sans-serif;
-    }
-
-    #menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    #menu li {
+    #menu li{
       display: inline;
       font-size: 20px;
-      margin-right: 70px;
+      padding-left: 20px;
       color: white;
+      opacity: 1;
+      z-index: 1;
+      font-size: 20px;
+      padding-right: 40px;
     }
-    form
+    #menu
     {
-      position: absolute;
-      bottom: 20px;
+      backdrop-filter: none;
+      margin-top: 0;
+      color: white;
+
+    }
+    form {
+      position: fixed;
+      bottom: 20px; /* Adjust the distance from the bottom as needed */
+      right: 50px; /* Adjust the distance from the right as needed */
       color: #2b3848;
-      right: 70px;
-      margin: 20px;
       background: #f3f2f2;
       border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       padding: 50px;
-      width: 100%;
+      width: 450px;
       max-width: 450px;
       max-height: 800px;
       display: flex;
@@ -81,7 +75,7 @@
     }
     .radio-group label
     {
-      font: 600 18px/18px 'Lato';
+      font: 600 19px/18px 'Lato';
       font-weight: bolder;
       padding-left: 10px;
       margin-top: 60px;
@@ -130,7 +124,6 @@
 <div id="menu">
   <ul>
     <li>ABOUT US</li>
-    <li>LOGIN</li>
     <li>HOME</li>
     <li>MAP</li>
   </ul>
@@ -141,7 +134,10 @@
     <div class="slika" ><img src="https://cdn-icons-png.flaticon.com/512/188/188388.png"><p>300 monuments</p></div>
   </div>
   <input type="text" name="name" id="name" placeholder="Search by name...">
-  <input type="text" name="name" id="city" placeholder="Search by city...">
+  <button type="submit" name="searchName" class="show">Search</button>
+  <input type="text" name="city" id="city" placeholder="Search by city...">
+  <button type="submit" name="searchCity" class="show">Search</button>
+
 
   <div class="radio-group">
     <input type="radio" name="type" value="museum" id="museum">
@@ -155,39 +151,6 @@
   </div>
 </form>
 
-
-
-<!--<form method="get" th:action="@{/search/search3}">-->
-<!--  <label>Type:</label>-->
-<!--  <input type="radio" name="type" value="museum" id="museum">-->
-<!--  <label for="museum">Museum</label>-->
-<!--  <input type="radio" name="type" value="monument" id="monument">-->
-<!--  <label for="monument">Monument</label>-->
-<!--  <input type="radio" name="type" value="archeological_site" id="archeological_site">-->
-<!--  <label for="archeological_site">Archeological Site</label>-->
-<!--  <input type="radio" name="type" value="church" id="church">-->
-<!--  <label for="church">Church</label>-->
-<!--</form>-->
-
-
-
-<!--<script>-->
-<!--  window.onload = function() {-->
-<!--    function funkc(){-->
-<!--      var lista=document.getElementById("lista").value;-->
-<!--      var search1=document.getElementById("search1").value;-->
-<!--      var search2=document.getElementById("search2").value;-->
-
-<!--      if (search1 === "" && search2 === "") {-->
-<!--        lista.style.display = "none"; // Hide the list-->
-<!--        alert("Vnesete podatoci");-->
-<!--        return;-->
-<!--      } else {-->
-<!--        lista.style.display = "block"; // Show the list-->
-<!--      }-->
-<!--    }-->
-<!--  };-->
-<!--</script>-->
 
 </body>
 </html>

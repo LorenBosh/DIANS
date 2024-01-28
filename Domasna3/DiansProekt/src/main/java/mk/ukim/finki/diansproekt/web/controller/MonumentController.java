@@ -1,6 +1,9 @@
 package mk.ukim.finki.diansproekt.web.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import mk.ukim.finki.diansproekt.model.Monument;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import mk.ukim.finki.diansproekt.service.MonumentService;
 import org.springframework.stereotype.Controller;
@@ -17,19 +20,21 @@ public class MonumentController {
 
     private final MonumentService monumentService;
 
+    @Autowired
+    private ObjectMapper objectMapper;
     public MonumentController(MonumentService monumentService) {
         this.monumentService = monumentService;
     }
 
     @GetMapping
-    public String getMonumentsPage(@RequestParam(required = false) String error, Model model){
+    public String getMonumentsPage(@RequestParam(required = false) String error, Model model) throws JsonProcessingException {
         if(error != null && !error.isEmpty()){
             model.addAttribute("hasError",true);
             model.addAttribute("error", error);
         }
         List< Monument> monuments=monumentService.findAll();
         model.addAttribute("monuments", monumentService.findAll());
-
+        model.addAttribute("monumentsForJS", objectMapper.writeValueAsString(monumentService.findAll()));
         return "listMonuments";
     }
 

@@ -92,7 +92,7 @@
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-        fetch('https://raw.githubusercontent.com/LorenBosh/DIANS/main/Domasna3/Database/schema.sql')
+        fetch('https://raw.githubusercontent.com/LorenBosh/DIANS/main/Domasna3i4/Database/schema.sql')
             .then(response => response.text())
             .then(sqlContent => {
                 const monuments = parseSqlToJSON(sqlContent);

@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/repository/jpa/MonumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/repository/jpa/MonumentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/MonumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/MonumentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/service/impl/MonumentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/monumentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/monumentDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/monumentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/monumentDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/searchResults.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/diansproekt/bootstrap/DataHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/ukim/finki/diansproekt/bootstrap/DataHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/diansproekt/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/diansproekt/repository/impl/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/diansproekt/service/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/diansproekt/service/impl/AuthServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,7 @@
       <option name="appName" />
       <option name="appServicePlanName" />
       <option name="appServicePlanResourceGroup" />
-      <option name="appSettingsKey" value="e9339080-82ac-417d-b08c-c46cd4bef50d" />
+      <option name="appSettingsKey" value="dc025936-a373-450f-aa84-52892418abc4" />
       <option name="artifact" />
       <option name="debugOptions" />
       <option name="deployment" />
@@ -123,7 +121,7 @@
       <option name="appName" />
       <option name="appServicePlanName" />
       <option name="appServicePlanResourceGroup" />
-      <option name="appSettingsKey" value="dc025936-a373-450f-aa84-52892418abc4" />
+      <option name="appSettingsKey" value="e9339080-82ac-417d-b08c-c46cd4bef50d" />
       <option name="artifact" />
       <option name="debugOptions" />
       <option name="deployment" />
@@ -180,7 +178,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="96138005-38d5-4daf-9d2e-1f08557b7198" name="Changes" comment="main page smooth scrolling" />
+      <changelist id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="" />
       <created>1706286156819</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -207,6 +205,7 @@
       <workItem from="1706286162309" duration="1249000" />
       <workItem from="1706358178425" duration="1118000" />
       <workItem from="1706361964349" duration="1284000" />
+      <workItem from="1706473601962" duration="938000" />
     </task>
     <task id="LOCAL-00001" summary="main page smooth scrolling">
       <option name="closed" value="true" />

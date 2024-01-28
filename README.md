@@ -7,5 +7,5 @@
 Никола Пендевски(212044) 
 Лорен Бошкоски(211084)
 
-Моментална работна публикувана верзија: https://monumentsmacedonia.onrender.com
+Публикувана верзија од нашата апликација: https://monumentsinmacedonia.onrender.com
 

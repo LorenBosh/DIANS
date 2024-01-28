@@ -120,10 +120,10 @@
 <!-- koristime POST method za da se osigurame deka informaciite ke bidat isprateni bezbedno -->
 <body>
 
-<form th:method="POST">
+<form th:method="POST" th:action="@{/login}">
     <div id="natpis">
         <p id="text">Get a step closer and discover Macedonia</p>
-        <p id="subtext">by logging in to our page...</p>
+        <p id="subtext">by signing in to our page...</p>
     </div>
     <input type="text" id="username" name="username" placeholder="Username"/><br/>
     <input type="password" id="password" name="password" placeholder="Password"/><br/>

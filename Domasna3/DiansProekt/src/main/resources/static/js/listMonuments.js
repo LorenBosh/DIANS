@@ -53,8 +53,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (i < monuments.length) {
                 var monument = monuments[i];
                 var newRow = document.createElement('tr');
-                newRow.innerHTML = '<td id="name"><a class="monument-link" href="/details/' + monument.id + '">' + monument.name + '</a></td>' +
-                    '<td><a class="details-link" href="/details/' + monument.id + '">Details</a></td>';
+                newRow.innerHTML = '<td id="name"><a class="monument-link" href="/details/' + monument.id + '">' + monument.name + '</a></td>';
                 tableBody.appendChild(newRow);
 
                 /* Apply fadeIn effect to the new row */
@@ -67,10 +66,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         var currentPosition =  document.documentElement.scrollTop;
         window.scrollTo({
-            top:currentPosition+150,
-            behavior:"smooth"
+            top: currentPosition + 150,
+            behavior: "smooth"
         })
     }
+
 
     function showLess() {
         var karticka = document.getElementById("karticka");

@@ -38,7 +38,7 @@ public class LoginController {
 
         HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, headers);
 
-        ResponseEntity<String> authResponseEntity = restTemplate.postForEntity("http://localhost:9090/auth/login", requestEntity, String.class);
+        ResponseEntity<String> authResponseEntity = restTemplate.postForEntity("https://loginmicroservice.onrender.com/auth/login", requestEntity, String.class);
 
         String authResponse = authResponseEntity.getBody();
         if (!authResponse.contains("fail")) {

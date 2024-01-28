@@ -1,98 +1,108 @@
-<style>
-  body {
-    font-family: 'Lato', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background: url('https://i0.wp.com/livingourmemories.com/wp-content/uploads/2023/09/Things-to-see-in-Skopje-North-Macedonia-Square-3.jpg?resize=1440%2C960&ssl=1') no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-  }
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Search</title>
 
-  #menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    height: 100px;
-  }
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      background: url('https://i0.wp.com/livingourmemories.com/wp-content/uploads/2023/09/Things-to-see-in-Skopje-North-Macedonia-Square-3.jpg?resize=1440%2C960&ssl=1') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
 
-  #menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+    #menu li{
+      display: inline;
+      font-size: 20px;
+      padding-left: 20px;
+      color: white;
+      opacity: 1;
+      z-index: 1;
+      font-size: 20px;
+      padding-right: 40px;
+    }
+    #menu
+    {
+      backdrop-filter: none;
+      margin-top: 0;
+      color: white;
+    }
 
-  #menu li {
-    display: inline;
-    font-size: 20px;
-    margin-right: 70px;
-    color: white;
-  }
+    #div_1 {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 25px 20px;
+      padding-left: 350px;
+      align-content: center;
+    }
 
-  #div_1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 25px 20px;
-    padding-left: 350px;
-    align-content: center;
-  }
+    #div_2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+    }
 
-  #div_2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-  }
+    #div_2 li {
+      width: 300px;
+      height: 150px;
+      margin: 20px;
+      background-color: #f3f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: #2b3848;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-  #div_2 li {
-    width: 300px;
-    height: 150px;
-    margin: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+    #div_2 ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+    }
 
-  #div_2 ul {
-    list-style: none;
-    padding: 0;
-  }
+    #div_2 span {
+      display: block;
+    }
 
-  #div_2 span {
-    display: block;
-  }
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
 
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
+    a:hover {
+      color: lightgray;
+    }
 
-  a:hover {
-    color: lightgray;
-  }
-</style>
+    #details{
+      color: #2b3848;
+    }
+  </style>
+</head>
+
+<body>
 
 <div id="menu">
   <ul>
-    <b>
-      <li>ABOUT US</li>
-      <li>LOGIN</li>
-      <li>HOME</li>
-      <li>MAP</li>
-    </b>
+    <li><a th:href="@{'/aboutUs'}">ABOUT US</a></li>
+    <li><a th:href="@{'/search'}">SEARCH</a></li>
+    <li><a th:href="@{'/map'}">MAP</a></li>
+    <li><a th:href="@{'/'}">HOME</a></li>
+
   </ul>
 </div>
 
@@ -105,8 +115,11 @@
           <span th:text="${monument.city}"></span>
           <span th:text="${monument.type}"></span>
         </b>
-        <a th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a>
+        <a id="details" th:href="@{'/details/{id}' (id=${monument.getId()})}">Details</a>
       </li>
     </ul>
   </div>
 </div>
+
+</body>
+</html>

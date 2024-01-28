@@ -78,7 +78,7 @@
       font: 600 19px/18px 'Lato';
       font-weight: bolder;
       padding-left: 10px;
-      margin-top: 60px;
+      margin-top: 30px;
       margin-right: 8px;
       color: #2b3848;
     }
@@ -114,7 +114,29 @@
       color: #2b3848;;
     }
 
+    a{
+      text-decoration:none;
+      color: white;
+    }
 
+    a:hover {
+      color: lightgray;
+    }
+
+    button {
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      background-color: transparent;
+      border: 2px solid #2b3848;
+      color: #555555;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -123,9 +145,9 @@
 <!-- Search by Name -->
 <div id="menu">
   <ul>
-    <li>ABOUT US</li>
-    <li>HOME</li>
-    <li>MAP</li>
+    <li><a th:href="@{'/aboutUs'}">ABOUT US</a></li>
+    <li><a th:href="@{'/map'}">MAP</a></li>
+    <li><a th:href="@{'/'}">HOME</a></li>
   </ul>
 </div>
 <form method="post" th:action="@{/search/search1}">
@@ -134,7 +156,10 @@
     <div class="slika" ><img src="https://cdn-icons-png.flaticon.com/512/188/188388.png"><p>300 monuments</p></div>
   </div>
   <input type="text" name="name" id="name" placeholder="Search by name...">
+  <button type="submit" name="searchName">Search</button>
   <input type="text" name="name" id="city" placeholder="Search by city...">
+  <button type="submit" name="searchCity">Search</button>
+
 
   <div class="radio-group">
     <input type="radio" name="type" value="museum" id="museum">

@@ -9,3 +9,6 @@
 
 Публикувана верзија од нашата апликација: https://monumentsinmacedonia.onrender.com
 
+Видео од третата домашна работа: https://youtu.be/ke4CbuUQ_S8
+Видео од четвртата домашна работа: https://youtu.be/PdfWQ84qy0o
+

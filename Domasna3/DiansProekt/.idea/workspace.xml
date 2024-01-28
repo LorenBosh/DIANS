@@ -4,26 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="search page initial">
-    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="code refractoring">
+    <list default="true" id="f8a529da-00b1-4e1a-a6d2-03b97afc366c" name="Changes" comment="monumentDetails User interface improvements">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/aboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/searchResults.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/DiansProektApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/DiansProektApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/diansproekt/web/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-login-microservice/src/main/java/com/example/userloginmicroservice/web/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/monumentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/monumentDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/monumentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/monumentDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/searchResults.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Rebase.Settings">
     <option name="NEW_BASE" value="main" />
@@ -60,8 +63,6 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;WikipediaInformationExtraction&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lunadelevska/Desktop/dians/diansProekt/Domasna3/DiansProekt&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/FilipRabota/DIANS/Domasna3/DiansProekt&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -254,6 +255,7 @@
     <MESSAGE value="Kreiranje infrastuktura za rabota so bazi na podatoci" />
     <MESSAGE value="SQl Script Data Populating" />
     <MESSAGE value="code refractoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refractoring" />
+    <MESSAGE value="monumentDetails User interface improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="monumentDetails User interface improvements" />
   </component>
 </project>

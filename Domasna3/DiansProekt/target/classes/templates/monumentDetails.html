@@ -49,7 +49,7 @@
 
     section{
       color: #2b3848; /* Changed the font color to black */
-      font-size: 18px;
+      font-size: 16px;
       position: fixed;
       bottom: 0px;
       width: 350px;
@@ -77,6 +77,13 @@
     h1{
       color: #2b3848; /* Changed the font color to black */
     }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover {
+        color: lightgray;
+    }
   </style>
 
 </head>
@@ -84,10 +91,10 @@
 
 <div id="menu">
   <ul>
-      <li>ABOUT US</li>
-      <li>SEARCH</li>
-      <li>HOME</li>
-      <li>MAP</li>
+      <li><a th:href="@{'/aboutUs'}">ABOUT US</a></li>
+      <li><a th:href="@{'/search'}">SEARCH</a></li>
+      <li><a th:href="@{'/map'}">MAP</a></li>
+      <li><a th:href="@{'/'}">HOME</a></li>
   </ul>
 </div>
 
@@ -97,14 +104,14 @@
 
   <div id="extract"></div>
 
-  <section>
-    <h3 th:text="${monument.getCity()}" th:name="city">City:[monument.city]</h3>
-    <h3 th:text="${monument.getAddress()}">Address</h3>
-    <h3 th:text="${monument.getType()}">Type</h3>
-    <h3 th:text="${monument.getOpeningHours()}">Opening Hours</h3>
-    <h3 th:text="${monument.getEmail()}">Email</h3>
-    <h3 th:text="${monument.getPhone()}">Phone</h3>
-  </section>
+    <section>
+        <h3 th:text="'City: ' + ${monument.getCity()}">City</h3>
+        <h3 th:text="'Address: ' + ${monument.getAddress()}">Address</h3>
+        <h3 th:text="'Type: ' + ${monument.getType()}">Type</h3>
+        <h3 th:text="'Opening Hours: ' + ${monument.getOpeningHours()}">Opening Hours</h3>
+        <h3 th:text="'Email: ' + ${monument.getEmail()}">Email</h3>
+        <h3 th:text="'Phone number: ' + ${monument.getPhone()}">Phone</h3>
+    </section>
 
 </div>
 

@@ -1,16 +1,12 @@
 package mk.ukim.finki.diansproekt.web.controller;
 
 
-import mk.ukim.finki.diansproekt.model.exceptions.InvalidArgumentsException;
-import mk.ukim.finki.diansproekt.model.exceptions.PasswordsDoNotMatchException;
-import mk.ukim.finki.diansproekt.service.AuthService;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

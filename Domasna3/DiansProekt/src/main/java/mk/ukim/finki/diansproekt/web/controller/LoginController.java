@@ -1,24 +1,15 @@
 package mk.ukim.finki.diansproekt.web.controller;
 
 
-import jakarta.servlet.http.HttpServletRequest;
-import mk.ukim.finki.diansproekt.model.User;
-import mk.ukim.finki.diansproekt.model.exceptions.InvalidUserCredentialsException;
-import mk.ukim.finki.diansproekt.service.AuthService;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 

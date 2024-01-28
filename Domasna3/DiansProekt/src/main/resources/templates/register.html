@@ -13,6 +13,9 @@
             font: 600 16px/18px 'Lato';
         }
 
+        .error{
+            color:red;
+        }
         *,
         *:after,
         *:before {
@@ -126,7 +129,7 @@
         </section>
 
         <div class="container mb-4">
-            <form class="form-signin mt-xl-5" method="post" action="/register">
+            <form class="form-signin mt-xl-5" method="post" >
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/014/571/435/small/airplane-routes-travel-icon-travel-from-start-point-and-dotted-line-tracing-png.png">
                 <h2 class="form-signin-heading">Register form</h2>
                 <p>
@@ -146,9 +149,9 @@
                     <input type="text" id="surname" name="surname" class="form-control" placeholder="Surname" required="" autofocus="">
                 </p>
 
-                <th:block th:if="${hasError}">
-                    <div th:text="${error}" class="text-danger"></div>
-                </th:block>
+                <div th:if="${hasError}" class="error">
+                    <div th:text="${error}"></div>
+                </div>
 
                 <button class="btn btn-lg btn-primary btn-block" type="submit" id="signup">Sign up</button>
                 <a href="/login" class="btn btn-block btn-light" id="login">Already have an account? <b>Login here!</b></a>

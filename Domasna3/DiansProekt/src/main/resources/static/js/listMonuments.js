@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', (event) => {
     var showMoreButton = document.getElementById('showMoreButton');
     var showLessButton = document.getElementById('showLessButton');

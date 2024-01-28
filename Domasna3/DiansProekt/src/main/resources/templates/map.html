@@ -6,11 +6,49 @@
     <title>Cultural Heritage Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <style>
-        #map {
-            height: 500px;
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+        html, body {
+            height: 100%;
+            margin: 0;
+            background: #D0DFF0;
+            font-family: 'Lato',sans-serif;
         }
-        .btn
-        {
+        #menu {
+            display: flex;
+            margin-left: 150px;
+            padding: 10px;
+            height: 30px;
+            font-family: 'Lato',sans-serif;
+
+        }
+
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            display: inline;
+            font-size: 20px;
+            margin-right: 70px;
+            color: white;
+        }
+
+        #map {
+            height: 100%;
+        }
+        h1 {
+            background: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            z-index: 1000; /* Ensure the h1 is on top of the map */
+
+        }
+
+        .btn {
             background-color: #333;
             color: #fff;
             padding: 10px 15px;
@@ -19,26 +57,33 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
         .btn:hover {
             background-color: #555;
         }
+
         a {
             text-decoration: none;
-            color: #333;
+            color: white;
             font-weight: bold;
         }
-        a:hover {
-            color: #555;
-        }
 
+        a:hover {
+            color: lightgray;
+        }
     </style>
 </head>
 <body>
-<div id="home-btn">
-    <a href="/" class="btn">Back to main page</a>
+<div id="menu">
+    <ul>
+        <li><a th:href="@{'/aboutUs'}">ABOUT US</a></li>
+        <li><a th:href="@{'/search'}">SEARCH</a></li>
+        <li><a th:href="@{'/'}">HOME</a></li>
+    </ul>
 </div>
-<h1>Cultural Heritage Map</h1>
+
 <div id="map"></div>
+
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
